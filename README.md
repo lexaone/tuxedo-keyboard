@@ -1,3 +1,6 @@
+## this fork just a playground for NUC X15 platform (LAPKC71E, LAPKC71F), based on tongfang implementation
+currently only MICMUTE KEY support added  
+
 # Table of Content
 - <a href="#description">Description</a>
 - <a href="#building">Building and Install</a>
