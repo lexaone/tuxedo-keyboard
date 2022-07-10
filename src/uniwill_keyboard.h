@@ -48,6 +48,7 @@
 #define UNIWILL_KEY_RFKILL			0x0A4
 #define UNIWILL_KEY_KBDILLUMDOWN		0x0B1
 #define UNIWILL_KEY_KBDILLUMUP			0x0B2
+#define UNIWILL_KEY_KBDMICMUTE			0x0B7
 #define UNIWILL_KEY_KBDILLUMTOGGLE		0x0B9
 
 #define UNIWILL_OSD_TOUCHPADWORKAROUND		0xFFF
@@ -81,6 +82,9 @@ static struct key_entry uniwill_wmi_keymap[] = {
 	{ KE_KEY,	UNIWILL_KEY_KBDILLUMDOWN,	{ KEY_KBDILLUMDOWN } },
 	{ KE_KEY,	UNIWILL_KEY_KBDILLUMUP,		{ KEY_KBDILLUMUP } },
 	{ KE_KEY,	UNIWILL_KEY_KBDILLUMTOGGLE,	{ KEY_KBDILLUMTOGGLE } },
+	//workaround to work MICMUTE key in X11(gnome?)//workaround to work MICMUTE key in X11(gnome?), for a strange reason KEY_MICMUTE didn't have any handler in X11/Gnome, only F20 key work!
+	//      { KE_KEY,       UNIWILL_KEY_KBDMICMUTE,    { KEY_MICMUTE } },
+        { KE_KEY,       UNIWILL_KEY_MICMUTE,    { KEY_F20 } },
 	// Only used to put ev bits
 	{ KE_KEY,	0xffff,				{ KEY_F6 } },
 	{ KE_KEY,	0xffff,				{ KEY_LEFTALT } },
