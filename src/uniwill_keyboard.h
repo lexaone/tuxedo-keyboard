@@ -84,7 +84,7 @@ static struct key_entry uniwill_wmi_keymap[] = {
 	{ KE_KEY,	UNIWILL_KEY_KBDILLUMTOGGLE,	{ KEY_KBDILLUMTOGGLE } },
 	//workaround to work MICMUTE key in X11(gnome?)//workaround to work MICMUTE key in X11(gnome?), for a strange reason KEY_MICMUTE didn't have any handler in X11/Gnome, only F20 key work!
 	//      { KE_KEY,       UNIWILL_KEY_KBDMICMUTE,    { KEY_MICMUTE } },
-        { KE_KEY,       UNIWILL_KEY_MICMUTE,    { KEY_F20 } },
+        { KE_KEY,       UNIWILL_KEY_KBDMICMUTE,    { KEY_F20 } },
 	// Only used to put ev bits
 	{ KE_KEY,	0xffff,				{ KEY_F6 } },
 	{ KE_KEY,	0xffff,				{ KEY_LEFTALT } },
